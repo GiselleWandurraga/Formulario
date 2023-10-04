@@ -1,0 +1,96 @@
+body {
+    background-color: #e9d5e8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+.titulo{
+
+    color: #770881;
+}
+
+.formulario {
+    font-family: Arial, sans-serif;
+    background-color: #caa8e8;
+    border-radius: 15px;
+    width: 500px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+
+
+}
+
+.formulario label {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 2px;
+    color: #770881;
+    font-family:'Times New Roman', Times, serif;
+
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="number"]
+{
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#fecha_n{
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.formulario input[type="radio"]{
+    font-family:'Times New Roman', Times, serif;
+}
+
+.formulario select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+}
+
+#boton{
+    background-color:#770881;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 40%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+h1 {
+    text-align: center;
+}
+
+@media(max-width: 560px){
+    .formulario{
+    margin: 20px 5%;
+}
+}
+
+#alert{
+    border: 1px solid black;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    left: 300px;
+
+}
