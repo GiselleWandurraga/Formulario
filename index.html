@@ -10,6 +10,16 @@
 </head>
 
 <body>
+    <div class="alert-container" id="alert">
+       
+        <div id="alert-content"></div>
+        <div class="alert-buttons">
+            <button class="alert-button" onclick="closeAlert()">Aceptar</button>
+           
+        </div>
+    </div>
+
+
     <div class="contenedor_alert">
         <h1 id="alert"></h1>
     </div>
@@ -25,6 +35,7 @@
 
         <label for="tipo de Documento">Tipo de documento:</label>
         <select id="tip_doc" name="tip_doc" required>
+            <option disabled selected="" id="text_doc" >Seleccione una opcion</option>
             <option value="TI">TI</option>
             <option value="CC">CC</option>
             <option value="CE">CE</option>
@@ -34,6 +45,9 @@
         </Select>
         <label for="documento">Documento:</label>
         <input type="number" id="documento" name="documento" placeholder="Ingrese su número de documento"required>
+
+        <label for="number">Teléfono:</label>
+        <input type="number" id="cel" name="cel" placeholder="Ingrese su teléfono" required>
 
         <label for="email">Correo Electrónico:</label>
         <input type="email" id="email" name="email" placeholder="Ingrese su email" required>
@@ -45,7 +59,6 @@
         </div>
         <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
         <input type="date" id="fecha_n" name="fecha_n" required>
-
 
         <input type="button" value="Registrar" id="boton" onclick="validar()">
     </div>
