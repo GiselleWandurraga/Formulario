@@ -47,23 +47,29 @@ body {
     color: #770881;
 }
 
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .formulario {
     font-family: Arial, sans-serif;
     background-color: #caa8e8;
     border-radius: 15px;
-    width: 500px;
+    width: 800px;
     margin: 20px 0;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 10px;
+    padding: 60px;
 
 
 }
 
 .formulario label {
     display: block;
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 2px;
     color: #770881;
     font-family:'Times New Roman', Times, serif;
@@ -78,15 +84,20 @@ body {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 20px;
+
 }
 #fecha_n{
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius:5px;
+    font-size: 20px;
 }
 .formulario input[type="radio"]{
     font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+
 }
 
 .formulario select{
@@ -107,19 +118,49 @@ body {
     margin: 20px 40%;
     display: flex;
     justify-content: center;
-}
+    font-size: 25px;
 
+}
 
 
 h1 {
     text-align: center;
 }
 
+.tabla{
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-top: 2%;
+    width: 100%;
+    margin-bottom: 25px;
+    background-color: #f2c3eb;
+}
+.tabla th {
+    border: 1px solid rgb(246, 3, 217);
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    overflow: hidden;
+    padding: 5px;
+    word-break: normal;
+    color:#78028b;
+    padding: 20px;
+    text-align: left;
+}
+
+td {
+    background-color: white;
+    border: 1px solid rgb(246, 3, 217);
+    padding: 20px;
+
+}
 
 
 @media(max-width: 560px){
     .formulario{
     margin: 20px 5%;
+}
+.tabla{
+    width: 80%;
 }
 }
 

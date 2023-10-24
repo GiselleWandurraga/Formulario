@@ -11,18 +11,19 @@
 
 <body>
     <div class="alert-container" id="alert">
-       
+
         <div id="alert-content"></div>
         <div class="alert-buttons">
             <button class="alert-button" onclick="closeAlert()">Aceptar</button>
-           
+
         </div>
-    </div>
+    </div>
 
 
     <div class="contenedor_alert">
         <h1 id="alert"></h1>
     </div>
+    <div class="contenedor">
     <div class="formulario">
         <div class="titulo">
             <h1>Formulario de Registro</h1>
@@ -35,7 +36,7 @@
 
         <label for="tipo de Documento">Tipo de documento:</label>
         <select id="tip_doc" name="tip_doc" required>
-            <option disabled selected="" id="text_doc" >Seleccione una opcion</option>
+            <option disabled selected="" id="text_doc">Seleccione una opcion</option>
             <option value="TI">TI</option>
             <option value="CC">CC</option>
             <option value="CE">CE</option>
@@ -44,7 +45,7 @@
             <option value="PA">PA</option>
         </Select>
         <label for="documento">Documento:</label>
-        <input type="number" id="documento" name="documento" placeholder="Ingrese su número de documento"required>
+        <input type="number" id="documento" name="documento" placeholder="Ingrese su número de documento" required>
 
         <label for="number">Teléfono:</label>
         <input type="number" id="cel" name="cel" placeholder="Ingrese su teléfono" required>
@@ -54,14 +55,34 @@
 
         <label for="genero">Género:</label>
         <div>
-        <input type="radio" id="f" name="genero" required> Femenino
-        <input type="radio" id="m" name="genero" required> Masculino
+            <input type="radio" id="f" name="genero" value="Femenino" required> Femenino
+            <input type="radio" id="m" name="genero" value="Masculino"required> Masculino
         </div>
         <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
         <input type="date" id="fecha_n" name="fecha_n" required>
 
         <input type="button" value="Registrar" id="boton" onclick="validar()">
+        
     </div>
+    <table class="tabla" id="tablaDatos">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Tipo de documento</th>
+                <th>Documento</th>
+                <th>Teléfono</th>
+                <th>Correo</th>
+                <th>Género</th>
+                <th>Fecha de Nacimiento</th>
+                <th>Opciones</th>
+
+            </tr>
+
+    <tbody id="tabla">
+    </tbody>
+</table>
+</div>
 </body>
 
 </html>
